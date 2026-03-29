@@ -1,0 +1,183 @@
+/* Paleta extraída de tu configuración de React Native */
+:root {
+  --primary: #ff7a00; /* Orange brand */
+  --secondary: #1a2b48; /* Navy brand */
+  --background: #121212; /* Dark background */
+  --surface: #1e1e1e; /* Surface card */
+  --text: #ecedee; /* Text dark theme */
+  --text-dim: #9ba1a6; /* Text light theme */
+  --border: #2a2d33; /* Border dark */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header {
+  padding: 32px 0;
+  text-align: center;
+}
+.logo {
+  height: 75px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.hero {
+  padding: 60px 0;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+.accent {
+  color: var(--primary);
+}
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-dim);
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* Store Buttons */
+.store-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.store-badge {
+  background: #000;
+  border: 1px solid var(--border);
+  padding: 10px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.8;
+}
+.store-badge .text {
+  text-align: left;
+  line-height: 1.2;
+}
+.store-badge small {
+  display: block;
+  font-size: 10px;
+  color: var(--text-dim);
+}
+.store-badge strong {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Cards Section */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 40px 0;
+}
+.card {
+  background: var(--surface);
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+/* Business Section */
+.business {
+  padding: 60px 0;
+}
+.business-box {
+  background: var(--secondary);
+  padding: 48px;
+  border-radius: 24px;
+  text-align: center;
+  border: 1px solid rgba(255, 122, 0, 0.2);
+}
+.business-box h2 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+.btn-primary {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 24px;
+  transition: transform 0.2s;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+/* Vision */
+.vision {
+  padding: 80px 0;
+  text-align: center;
+}
+.vision p {
+  font-size: 1.4rem;
+  color: var(--text-dim);
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 60px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer-link {
+  color: var(--primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+.ranking-info {
+  background: rgba(255, 122, 0, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  margin: 24px auto;
+  max-width: 600px;
+}
+.copy {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-top: 32px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .business-box {
+    padding: 32px 20px;
+  }
+}
